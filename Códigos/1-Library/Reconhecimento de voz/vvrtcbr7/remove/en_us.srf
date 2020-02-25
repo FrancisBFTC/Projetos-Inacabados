@@ -1,0 +1,6 @@
+//TURN ON VIEWING WHITESPACE BECAUSE TABS ARE IMPORTANT
+//should be the same across all languages (for now)
+//then removed user files because they are non specific
+<INSTALLDIR>\BIN\SrWrap.dll
+<INSTALLDIR>\BIN\dictmacr.dll
+<INSTALLDIR>\BIN\vvsapext.dll

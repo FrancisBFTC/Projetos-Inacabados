@@ -1,0 +1,277 @@
+/*----------------------------------------------------------------------------*\
+ *
+ *
+ *                                             IBM (R)
+ *                                     (c) 1997,1999 IBM Corp.
+ *                                     All Rights Reserved.
+ *
+ *    File Name:    EXINSTALL.RUL
+ *
+ *    Description:  ViaVoice 7.0.0.60 Runtime
+ *                  Setup and Installation Script Support
+ *
+ *    Comments:     This script facilitates installation of ViaVoice Runtime
+ *                  V7.0 on Win95 or Windows NT.  It is intended for Install
+ *                  Shield 5.5.  Main Driver Function is InstallDictRT.
+ *
+ *                  Please review the licensing agreement for more information.
+\*----------------------------------------------------------------------------*/
+
+#include "rtreturn.h"
+
+/////////////////////////// GLOBALS /////////////////////////////////////////
+
+/////////////////////////// PROTOTYPES //////////////////////////////////////
+
+/////////////////////////// UTILITIES /////////////////////////////////////////
+prototype logmessage ( STRING );
+prototype CustomAbort ();
+
+function CustomAbort ()
+begin
+  //todo any special processing you need
+  abort;
+end;
+
+#ifdef DEBUG
+
+function logmessage( szString )
+NUMBER nvFileHandle;
+STRING svResult;
+begin    //FilePrint
+
+  // Check if file exists
+  nvFileHandle = 0;
+  if ( FindFile("C:\\", "install.log", svResult) = 0 ) then
+    OpenFile  (nvFileHandle, "C:\\", "install.log");   // Found file, open it
+  else
+    CreateFile(nvFileHandle, "C:\\", "install.log");   // Did not find file, create it
+  endif;
+
+  if (nvFileHandle) then
+    WriteLine(nvFileHandle, szString);                    // append info line
+  endif;
+
+  CloseFile(nvFileHandle);
+end;
+
+#else
+
+function logmessage( szString )
+  begin
+    //do Nothing!
+  end;
+
+#endif
+
+//////////////////////////END UTILITIES////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////////////////////////////
+//
+// Function:  InstallDictRT
+//
+//  Purpose:  Invoke the Dictation Runtime Installation.
+//
+//  Params :  INPUT STRING  szInstallPath (Path to install application)
+//            INPUT STRING  szUserName - User Name to create or set as
+//                          default if alrady exists
+//
+//  Globals:  SRCDIR - Directory of the installation Media
+//
+//  Return :  None
+//
+///////////////////////////////////////////////////////////////////////////////
+function InstallDictRT(szInstallPath, szUserName)
+    STRING szProgram, szParam, szKey, szTemp;
+begin
+    logmessage("Enter Function InstallDictRT (Installing dictation runtime)");
+
+    // Install the Dictation RT Install
+    szProgram = SRCDIR^"rt_dict\\setup.exe";
+    szParam   = szInstallPath;
+
+    //German installations may need extra support
+    //if (g_bNewOrthography) then
+    //   szParam = szParam + " /nn";
+    //endif;
+
+    szParam   = szParam  + " /nr /nl /nq /ns /nu \"" + szUserName + "\" -SMS";
+
+    //tell dict RT who we are, launch the install, then clean up
+    RegisterClient( VISIBLE_NAME, MAJOR_VERSION, MINOR_VERSION, UNIQUE  );
+    LaunchAppAndWait(szProgram, szParam, WAIT);
+    logmessage("InstallDictRT:  Dictation runtime called with param " + szParam);
+    RegisterCleanUp();
+
+    //check for and handle Error Codes
+    CheckDictRTErrorCodes();
+
+    logmessage("Exit Function InstallDictRT (Runtime Dictation Should Be Installed)");
+end;
+
+///////////////////////////////////////////////////////////////////////////////
+//
+// Function: RegisterClient
+//
+// Purpose:  An Example for ISVs to register their applications
+//           properly by setting registry keys for the runtime
+//           to properly register them as clients.
+//
+// Params : INPUT STRING szVisibleName - Name user of application should
+//                                       be familiar with
+//          INPUT STRING szMajor       - Major Version Number of Product
+//          INPUT STRING szMinor       - Minor Version Number of Product
+//          INPUT STRING szUnique      - Any additional string making
+//                                       installation of product unique
+// Return : None
+//
+///////////////////////////////////////////////////////////////////////////////
+function RegisterClient( szVisibleName, szMajor, szMinor, szUnique )
+STRING szClientRegistryKey;
+begin
+
+    logmessage("Enter Function RegisterClient " + szVisibleName + " " +
+               szMajor + " " + szMinor + " " + szUnique);
+
+    RegDBSetDefaultRoot( HKEY_LOCAL_MACHINE );
+    szClientRegistryKey = "SOFTWARE\\IBM_REGISTER";
+
+    RegDBCreateKeyEx( szClientRegistryKey, "" );
+    RegDBSetKeyValueEx(szClientRegistryKey, "szVisibleName", REGDB_STRING, szVisibleName,  -1 );
+    RegDBSetKeyValueEx(szClientRegistryKey, "szMajor", REGDB_STRING, szMajor,  -1 );
+    RegDBSetKeyValueEx(szClientRegistryKey, "szMinor", REGDB_STRING, szMinor,  -1 );
+    RegDBSetKeyValueEx(szClientRegistryKey, "szUnique", REGDB_STRING, szUnique,  -1 );
+
+    logmessage("Leaving Function RegisterClient");
+
+end;
+
+
+///////////////////////////////////////////////////////////////////////////////
+//
+// Function:  RegisterCleanUp
+//
+// Purpose:  To Clean up registry area providing runtime with information
+//
+// Params :  None
+//
+// Return :  None
+//
+///////////////////////////////////////////////////////////////////////////////
+
+function RegisterCleanUp()
+STRING szClientRegistryKey;
+begin
+    logmessage("Entering Function RegisterCleanUp");
+    RegDBSetDefaultRoot( HKEY_LOCAL_MACHINE );
+    szClientRegistryKey = "SOFTWARE\\IBM_REGISTER";
+    RegDBDeleteKey(szClientRegistryKey);
+    logmessage("Exiting Function RegisterCleanUp");
+end;
+
+
+///////////////////////////////////////////////////////////////////////////////
+//
+// Function: CheckDictRTErrorCodes
+//
+// Purpose:  Determine and
+//
+// Params :  None
+//
+// Return :
+//    May Not Return:  (Aborts)
+//    Success       :  1
+//    Error         :  0
+//
+// User   : Driver to display errors to the user also aborts installation
+//
+///////////////////////////////////////////////////////////////////////////////
+function CheckDictRTErrorCodes( )
+    STRING szProgram,szParam,szKey, szTemp;
+    STRING szMsgStrng;
+    NUMBER nType, nTemp, nErrCode;
+begin
+    logmessage("Enter Function CheckDictRTErrorCodes");
+
+    RegDBSetDefaultRoot ( HKEY_LOCAL_MACHINE );
+    szKey = VIAVOICE_DICTRT_INSTALL_KEY;
+
+    //check the error code only if present
+    if (RegDBGetKeyValueEx(szKey, "ErrorCode", nType, szTemp, nTemp) = 0) then
+       RegDBDeleteKey ( szKey );
+	
+      //Convert the return code from String to Number
+       if (StrToNum (nErrCode, szTemp) < 0)then
+          logmessage("Exiting Function CheckDictRTErrorCodes (0)");
+          return 0;
+       endif;
+
+       if (nErrCode & RT_CONFIG_SUCCESS) then
+          logmessage("TODO: Handle dictation runtime install success");
+          logmessage("Exiting Function CheckDictRTErrorCodes (1)");
+          return 1;
+
+       elseif (nErrCode & RT_CONFIG_DISK_SPACE) then
+         logmessage("TODO: Handle too little disk space problem.");
+         CustomAbort();
+
+       elseif (nErrCode & RT_CONFIG_APP_ACTIVE) then
+         logmessage("TODO:  Handle speech applications are running.");
+         CustomAbort();
+
+      elseif (nErrCode & RT_CONFIG_OS_BAD) then
+         logmessage("TODO:  Handle OS check failed.");
+         CustomAbort();
+
+      elseif (nErrCode & RT_CONFIG_NOT_ADMIN) then
+         logmessage("TODO:  Handle not administrator failure.");
+         CustomAbort();
+
+      elseif (nErrCode & RT_CONFIG_NO_SOUND) then
+         logmessage("TODO:  Handle sound check failure.");
+         CustomAbort();
+
+      elseif (nErrCode & RT_CONFIG_DIFF_LANG) then
+         logmessage("TODO:  Handle different language earlier version error.");
+         CustomAbort();
+
+
+      elseif (nErrCode & RT_CONFIG_USER_QUIT) then
+         logmessage("TODO:  Handle general error failure.");
+         CustomAbort();
+
+       elseif (nErrCode & RT_CONFIG_REBOOT_REQ) then
+          BATCH_INSTALL = TRUE;
+          logmessage("TODO: Handle reboot required.");
+          logmessage("Exiting Function CheckDictRTErrorCodes (1)");
+          return 1;
+       endif;
+
+      elseif (nErrCode & RT_CONFIG_ERROR) then
+         logmessage("TODO:  Handle general error failure.");
+         CustomAbort();
+
+    endif;
+
+    logmessage("CheckDictRTErrorCodes:  Dictation runtime Error code check key not found or invalid");
+    logmessage("Exiting Function CheckDictRTErrorCodes (0)");
+    return 0;
+
+end;
+
+
+
+//
+//
+//
+//
+//  FROM YOUR MAIN ROUTINE INVOKE InstallDictRT with the user directory and
+//  user name you are interested creating/using.
+//  InstallDictRT("C:\\ViaVoiceGoesHere", "Ratbert Junior");
+//
+//
+//
+//
+
+

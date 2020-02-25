@@ -1,0 +1,13 @@
+#output : console.
+*Var
+	@a1 : getFile[].
+	@a2 : getDir[].
+	
+$EndVar
+Start
+	sis[(@a1)].bl
+	sis[(@a2)].
+	
+	
+%
+Final

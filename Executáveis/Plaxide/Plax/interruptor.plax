@@ -1,0 +1,1147 @@
+#output : gui.
+#dynamic : 1 => 'C:\\Users\\Casa-Pc\\Desktop\\Plaxide\\images\\plaxDyn.jpg'.
+#dynamic : 2 => 'C:\\Users\\Casa-Pc\\Desktop\\Plaxide\\images\\'.
+*Var
+$EndVar
+Start
+	dynamic[1 => effect : paint['black', 1]].
+		goto[0, 100].
+		goto[50, 100].
+		paint['white', 1].
+		goto[50, 200].
+		goto[200, 200].
+		goto[200, 100].
+		goto[55, 100].
+		paint['red', 10].
+		goto[195, 100].
+		pic['C:\\Users\\Casa-Pc\\Desktop\\Plaxide\\images\\inter.jpg'].
+		pic['C:\\Users\\Casa-Pc\\Desktop\\Plaxide\\images\\inter0.jpg'].
+	endDynamic
+	dynamic[1 => effect : paint['black', 1]].
+		goto[0, 100].
+		goto[50, 100].
+		paint['white', 1].
+		goto[50, 200].
+		goto[200, 200].
+		goto[200, 100].
+		goto[55, 100].
+		paint['red', 20].
+		goto[195, 100].
+		pic['C:\\Users\\Casa-Pc\\Desktop\\Plaxide\\images\\inter1.jpg'].
+	endDynamic
+	dynamic[1 => effect : paint['black', 1]].
+		goto[0, 100].
+		goto[50, 100].
+		paint['white', 1].
+		goto[50, 200].
+		goto[200, 200].
+		goto[200, 100].
+		goto[55, 100].
+		paint['red', 30].
+		goto[195, 100].
+		pic['C:\\Users\\Casa-Pc\\Desktop\\Plaxide\\images\\inter2.jpg'].
+	endDynamic
+	dynamic[1 => effect : paint['black', 1]].
+		goto[0, 100].
+		goto[50, 100].
+		paint['white', 1].
+		goto[50, 200].
+		goto[200, 200].
+		goto[200, 100].
+		goto[55, 100].
+		paint['red', 40].
+		goto[195, 100].
+		pic['C:\\Users\\Casa-Pc\\Desktop\\Plaxide\\images\\inter3.jpg'].
+	endDynamic
+	dynamic[1 => effect : paint['black', 1]].
+		goto[0, 100].
+		goto[50, 100].
+		paint['white', 1].
+		goto[50, 200].
+		goto[200, 200].
+		goto[200, 100].
+		goto[55, 100].
+		paint['red', 50].
+		goto[195, 100].
+		pic['C:\\Users\\Casa-Pc\\Desktop\\Plaxide\\images\\inter4.jpg'].
+	endDynamic
+	dynamic[1 => effect : paint['black', 1]].
+		goto[0, 100].
+		goto[50, 100].
+		paint['white', 1].
+		goto[50, 200].
+		goto[200, 200].
+		goto[200, 100].
+		goto[55, 100].
+		paint['black', 1].
+		goto[55, 110].
+		paint['red', 40].
+		goto[195, 110].
+		pic['C:\\Users\\Casa-Pc\\Desktop\\Plaxide\\images\\inter5.jpg'].
+	endDynamic
+	dynamic[1 => effect : paint['black', 1]].
+		goto[0, 100].
+		goto[50, 100].
+		paint['white', 1].
+		goto[50, 200].
+		goto[200, 200].
+		goto[200, 100].
+		goto[55, 100].
+		paint['black', 1].
+		goto[55, 120].
+		paint['red', 30].
+		goto[195, 120].
+		pic['C:\\Users\\Casa-Pc\\Desktop\\Plaxide\\images\\inter6.jpg'].
+	endDynamic
+	dynamic[1 => effect : paint['black', 1]].
+		goto[0, 100].
+		goto[50, 100].
+		paint['white', 1].
+		goto[50, 200].
+		goto[200, 200].
+		goto[200, 100].
+		goto[55, 100].
+		paint['black', 1].
+		goto[55, 130].
+		paint['red', 20].
+		goto[195, 130].
+		pic['C:\\Users\\Casa-Pc\\Desktop\\Plaxide\\images\\inter7.jpg'].
+	endDynamic
+	dynamic[1 => effect : paint['black', 1]].
+		goto[0, 100].
+		goto[50, 100].
+		paint['white', 1].
+		goto[50, 200].
+		goto[200, 200].
+		goto[200, 100].
+		goto[55, 100].
+		paint['black', 1].
+		goto[55, 140].
+		paint['red', 10].
+		goto[195, 140].
+		pic['C:\\Users\\Casa-Pc\\Desktop\\Plaxide\\images\\inter8.jpg'].
+	endDynamic
+	dynamic[1 => effect : paint['black', 1]].
+		goto[0, 100].
+		goto[50, 100].
+		paint['white', 1].
+		goto[50, 200].
+		goto[200, 200].
+		goto[200, 100].
+		goto[55, 100].
+		paint['black', 1].
+		goto[55, 150].
+		paint['red', 1].
+		goto[195, 150].
+		pic['C:\\Users\\Casa-Pc\\Desktop\\Plaxide\\images\\inter9.jpg'].
+	endDynamic
+	dynamic[1 => effect : paint['black', 1]].
+		goto[0, 100].
+		goto[50, 100].
+		paint['white', 1].
+		goto[50, 200].
+		goto[200, 200].
+		goto[200, 100].
+		goto[55, 100].
+		paint['black', 1].
+		goto[55, 150].
+		paint['red', 10].
+		goto[195, 150].
+		pic['C:\\Users\\Casa-Pc\\Desktop\\Plaxide\\images\\inter10.jpg'].
+	endDynamic
+	dynamic[1 => effect : paint['black', 1]].
+		goto[0, 100].
+		goto[50, 100].
+		paint['white', 1].
+		goto[50, 200].
+		goto[200, 200].
+		goto[200, 100].
+		goto[55, 100].
+		paint['black', 1].
+		goto[55, 150].
+		paint['red', 20].
+		goto[195, 150].
+		pic['C:\\Users\\Casa-Pc\\Desktop\\Plaxide\\images\\inter11.jpg'].
+	endDynamic
+	dynamic[1 => effect : paint['black', 1]].
+		goto[0, 100].
+		goto[50, 100].
+		paint['white', 1].
+		goto[50, 200].
+		goto[200, 200].
+		goto[200, 100].
+		goto[55, 100].
+		paint['black', 1].
+		goto[55, 150].
+		paint['red', 30].
+		goto[195, 150].
+		pic['C:\\Users\\Casa-Pc\\Desktop\\Plaxide\\images\\inter12.jpg'].
+	endDynamic
+	dynamic[1 => effect : paint['black', 1]].
+		goto[0, 100].
+		goto[50, 100].
+		paint['white', 1].
+		goto[50, 200].
+		goto[200, 200].
+		goto[200, 100].
+		goto[55, 100].
+		paint['black', 1].
+		goto[55, 150].
+		paint['red', 40].
+		goto[195, 150].
+		pic['C:\\Users\\Casa-Pc\\Desktop\\Plaxide\\images\\inter13.jpg'].
+	endDynamic
+	dynamic[1 => effect : paint['black', 1]].
+		goto[0, 100].
+		goto[50, 100].
+		paint['white', 1].
+		goto[50, 200].
+		goto[200, 200].
+		goto[200, 100].
+		goto[55, 100].
+		paint['black', 1].
+		goto[55, 150].
+		paint['red', 50].
+		goto[195, 150].
+		pic['C:\\Users\\Casa-Pc\\Desktop\\Plaxide\\images\\inter14.jpg'].
+	endDynamic
+	dynamic[2 => effect : capture['inter', jpg]].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+				skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+				skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+				skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+				skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+				skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+				skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].	
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+				skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+				skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+				skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+				skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+				skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+				skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+				skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+				skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+				skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+				skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+				skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].	
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+				skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+				skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+				skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+				skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+				skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+				skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+				skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+				skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+				skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+				skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+				skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].	
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+				skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+				skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+				skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+				skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+				skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+				skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+				skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+				skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+				skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+				skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+				skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].	
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+				skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+				skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+				skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+				skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+				skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+				skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+				skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+				skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+				skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+				skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+				skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].	
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+				skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+				skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+				skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+				skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+				skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+				skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+				skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+				skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+				skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+				skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+				skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].	
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+				skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+				skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+				skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+				skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+				skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+		skip[0 , 14 => 10].
+		skip[14 , 0 => 10].
+	endDynamic
+%
+Final

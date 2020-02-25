@@ -1,0 +1,176 @@
+International License Agreement for Evaluation of Programs
+
+
+Part 1 - General Terms
+
+PLEASE READ THIS AGREEMENT CAREFULLY BEFORE USING THE PROGRAM. IBM WILL LICENSE THE PROGRAM TO YOU ONLY IF YOU FIRST ACCEPT THE TERMS OF THIS AGREEMENT. BY USING THE PROGRAM YOU AGREE TO THESE TERMS. IF YOU DO NOT AGREE TO THE TERMS OF THIS AGREEMENT, PROMPTLY RETURN THE UNUSED PROGRAM TO IBM.
+
+The Program is owned by International Business Machines Corporation or one of its subsidiaries (IBM) or an IBM supplier, and is copyrighted and licensed, not sold.
+
+The term "Program" means the original program and all whole or partial copies of it. A Program consists of machine-readable instructions, its components, data, audio-visual content (such as images, text, recordings, or pictures), and related licensed materials.
+
+This Agreement includes Part 1 - General Terms and Part 2 - Country-unique Terms and is the complete agreement regarding the use of this Program, and replaces any prior oral or written communications between you and IBM. The terms of Part 2 may replace or modify those of Part 1.
+
+
+1. License
+
+Use of the Program
+
+IBM grants you a nonexclusive, nontransferable license to use the Program.
+
+You may 1) use the Program only for internal evaluation, testing or demonstration purposes, on a trial or "try-and-buy" basis and 2) make and install a reasonable number of copies of the Program in support of such use, unless IBM identifies a specific number of copies in the documentation accompanying the Program. The terms of this license apply to each copy you make. You will reproduce the copyright notice and any other legends of ownership on each copy, or partial copy, of the Program.
+
+THE PROGRAM MAY CONTAIN A DISABLING DEVICE THAT WILL PREVENT IT FROM BEING USED UPON EXPIRATION OF THIS LICENSE. YOU WILL NOT TAMPER WITH THIS DISABLING DEVICE OR THE PROGRAM. YOU SHOULD TAKE PRECAUTIONS TO AVOID ANY LOSS OF DATA THAT MIGHT RESULT WHEN THE PROGRAM CAN NO LONGER BE USED.
+
+You will 1) maintain a record of all copies of the Program and 2) ensure that anyone who uses the Program does so only for your authorized use and in compliance with the terms of this Agreement.
+
+You may not 1) use, copy, modify or distribute the Program except as provided in this Agreement; 2) reverse assemble, reverse compile, or otherwise translate the Program except as specifically permitted by law without the possibility of contractual waiver; or 3) sublicense, rent, or lease the Program.
+
+This license begins with your first use of the Program and ends 1) as of the duration or date specified in the documentation accompanying the Program or 2) when the Program automatically disables itself. Unless IBM specifies in the documentation accompanying the Program that you may retain the Program (in which case, an additional charge may apply), you will destroy the Program and all copies made of it within ten days of when this license ends.
+
+
+2. No Warranty
+
+SUBJECT TO ANY STATUTORY WARRANTIES WHICH CANNOT BE EXCLUDED, IBM MAKES NO WARRANTIES OR CONDITIONS EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION, THE WARRANTY OF NON-INFRINGEMENT AND THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE, REGARDING THE PROGRAM OR TECHNICAL SUPPORT, IF ANY. IBM MAKES NO WARRANTY REGARDING THE CAPABILITY OF THE PROGRAM TO CORRECTLY PROCESS, PROVIDE AND/OR RECEIVE DATE DATA WITHIN AND BETWEEN THE 20TH AND 21ST CENTURIES.
+
+This exclusion also applies to any of IBM's subcontractors, suppliers or program developers (collectively called "Suppliers").
+
+Manufacturers, suppliers, or publishers of non-IBM Programs may provide their own warranties.
+
+
+3. Limitation of Liability
+
+NEITHER IBM NOR ITS SUPPLIERS ARE LIABLE FOR ANY DIRECT OR INDIRECT DAMAGES, INCLUDING WITHOUT LIMITATION, LOST PROFITS, LOST SAVINGS, OR ANY INCIDENTAL, SPECIAL, OR OTHER ECONOMIC CONSEQUENTIAL DAMAGES, EVEN IF IBM IS INFORMED OF THEIR POSSIBILITY. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THE ABOVE EXCLUSION OR LIMITATION MAY NOT APPLY TO YOU.
+
+
+4. General
+
+Nothing in this Agreement affects any statutory rights of consumers that cannot be waived or limited by contract.
+
+IBM may terminate your license if you fail to comply with the terms of this Agreement. If IBM does so, you must immediately destroy the Program and all copies you made of it.
+
+You may not export the Program.
+
+Neither you nor IBM will bring a legal action under this Agreement more than two years after the cause of action arose unless otherwise provided by local law without the possibility of contractual waiver or limitation.
+
+Neither you nor IBM is responsible for failure to fulfill any obligations due to causes beyond its control.
+
+There is no additional charge for use of the Program for the duration of this license.
+
+IBM does not provide program services or technical support, unless IBM specifies otherwise.
+
+The laws of the country in which you acquire the Program govern this Agreement, except 1) in Australia, the laws of the State or Territory in which the transaction is performed govern this Agreement; 2) in Albania, Armenia, Belarus, Bosnia/Herzegovina, Bulgaria, Croatia, Czech Republic, Georgia, Hungary, Kazakhstan, Kirghizia, Former Yugoslav Republic of Macedonia (FYROM), Moldova, Poland, Romania, Russia, Slovak Republic, Slovenia, Ukraine, and Federal Republic of Yugoslavia, the laws of Austria govern this Agreement; 3) in the United Kingdom, all disputes relating to this Agreement will be governed by English Law and will be submitted to the exclusive jurisdiction of the English courts; 4) in Canada, the laws in the Province of Ontario govern this Agreement; and 5) in the United States and Puerto Rico, and People's Republic of China, the laws of the State of New York govern this Agreement.
+
+
+
+Part 2 - Country-unique Terms
+
+
+AUSTRALIA:
+
+No Warranty (Section 2):
+
+The following paragraph is added to this Section:
+
+Although IBM specifies that there are no warranties, you may have certain rights under the Trade Practices Act 1974 or other legislation and are only limited to the extent permitted by the applicable legislation.
+
+Limitation of Liability (Section 3):
+
+The following paragraph is added to this Section:
+
+Where IBM is in breach of a condition or warranty implied by the Trade Practices Act 1974, IBM's liability is limited to the repair or replacement of the goods, or the supply of equivalent goods. Where that condition or warranty relates to right to sell, quiet possession or clear title, or the goods are of a kind ordinarily acquired for personal, domestic or household use or consumption, then none of the limitations in this paragraph apply.
+
+
+GERMANY:
+
+No Warranty (Section 2):
+
+The following paragraphs are added to this Section:
+
+The minimum warranty period for Programs is six months.
+
+In case a Program is delivered without Specifications, we will only warrant that the Program information correctly describes the Program and that the Program can be used according to the Program information. You have to check the usability according to the Program information within the "money-back guaranty" period.
+
+Limitation of Liability (Section 3):
+
+The following paragraph is added to this Section:
+
+The limitations and exclusions specified in the Agreement will not apply to damages caused by IBM with fraud or gross negligence, and for express warranty.
+
+
+INDIA:
+
+General (Section 4):
+
+The following replaces the fourth paragraph of this Section:
+
+If no suit or other legal action is brought, within two years after the cause of action arose, in respect of any claim that either party may have against the other, the rights of the concerned party in respect of such claim will be forfeited and the other party will stand released from its obligations in respect of such claim.
+
+
+IRELAND:
+
+No Warranty (Section 2):
+
+The following paragraph is added to this Section:
+
+Except as expressly provided in these terms and conditions, all statutory conditions, including all warranties implied, but without prejudice to the generality of the foregoing, all warranties implied by the Sale of Goods Act 1893 or the Sale of Goods and Supply of Services Act 1980 are hereby excluded.
+
+
+ITALY:
+
+Limitation of Liability (Section 3):
+
+This Section is replaced by the following:
+
+Unless otherwise provided by mandatory law, IBM is not liable for any damages which might arise.
+
+
+NEW ZEALAND:
+
+No Warranty (Section 2):
+
+The following paragraph is added to this Section:
+
+Although IBM specifies that there are no warranties, you may have certain rights under the Consumer Guarantees Act 1993 or other legislation which cannot be excluded or limited. The Consumer Guarantees Act 1993 will not apply in respect of any goods or services which IBM provides, if you require the goods and services for the purposes of a business as defined in that Act.
+
+Limitation of Liability (Section 3):
+
+The following paragraph is added to this Section:
+
+Where Programs are not acquired for the purposes of a business as defined in the Consumer Guarantees Act 1993, the limitations in this Section are subject to the limitations in that Act.
+
+
+UNITED KINGDOM:
+
+Limitation of Liability (Section 3):
+
+The following paragraph is added to this Section at the end of the first paragraph:
+
+The limitation of liability will not apply to any breach of IBM's obligations implied by Section 12 of the Sales of Goods Act 1979 or Section 2 of the Supply of Goods and Services Act 1982.
+
+
+Z125-5543-01  (10/97)
+
+
+LICENSE INFORMATION
+
+The Programs listed below are licensed under the following terms and conditions in addition to those of the International License Agreement for Evaluation of Programs.
+
+Program Name:  IBM ViaVoice TTS Run Time Kit for Windows
+Program Number:  na
+
+Specified Operating Environment
+
+The Program Specifications and Specified Operating Environment information may be found in documentation accompanying the Program such as  the Installation/Users  Guide.
+
+Evaluation Period
+
+The license begins on the date you first use the Program and ends after 90 days.
+
+U.S. Government Users Restricted Rights
+
+U.S. Government Users Restricted Rights - Use, duplication, or disclosure restricted by the GSA ADP Schedule Contract with the IBM Corporation.
+
+D/N:  RMII-4JSLFY
+P/N:  RMII-4JSLFY
+

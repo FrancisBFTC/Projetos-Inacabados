@@ -1,0 +1,180 @@
+**************************************************
+ NOVA LINGUAGEM DE PROGRAMAÇÃO
+ PARADIGMA LÓGICO E IMPERATIVO
+ PROMULA - Programmed Musical Language (.pml)
+**************************************************
+
+A linguagem Promula (Linguagem musical programada) será desenvolvida
+para a criação de sistemas musicais, ex.: partitura.
+Promula facilitará também a criação de músicas em códigos de programação,
+e nesse quesito, a linguagem será desenvolvida para músicos que possui
+algum conhecimento sobre partituras, pois promula utilizará de símbolos
+musicais, comandos de escalas, arpeggios, notas, ritmos e loops.
+A linguagem não contém nada do paradigma estruturado, como declaração de
+variáveis, funções, estruturas,etc... EXCETO uma coisa : Loops - também
+conhecidas no paradigma estruturado de "Estruturas de repetição", a promula
+utilizará desse conceito de uma forma mais simplificada sem utilizar
+condições lógicas ou relacionais, apenas inserindo o comando "repeat"
+e o número após o comando relacionado a quantidade de repetições de um
+certo bloco, isto porque partituras contém a função de repetição de um certo
+compasso. Outra coisa em relação a linguagem é a forma que os comandos são
+escritos, ou seja, ligadas também ao paradigma imperativo, cada comando
+estabelece uma ordem de execução até chegar no final e assim, ao finalizar,
+a execução de todos o algoritmo é através do comando "play". Play tem 2 tipos
+de execucao: 1ª - em um arquivo quando inseridos no final o compilador Promula
+irá ler cada linha do arquivo guardando em um vetor uma espécie de "tradução"
+em outra linguagem (Ex.; C - linguagem na qual será criada), e play por sua vez
+será a finalização da linha, dizendo que, "salve o arquivo, compile e reproduza".
+2ª - Esta segunda forma é utilizando o play de forma interativa, através do
+interpretador chamado "PMLInterator", que irá interpretar o comando play em tempo
+real, Ex.: play _sm c , aqui eu digo "Toque a nota DÓ semimínima em tempo real".
+O play poderá ser usado também no cmd pelo compilador, já que digitando no cmd
+"Promule" apenas, ele irá inicializar o PMLInterator para interpretação em tempo
+real, e digitando "Promula arquivoDeMusica.pml" ele irá compilar o arquivoDeMúsica
+para a linguagem e por fim, executar. EIS abaixo o exemplo de um programa musical 
+em promula :
+
+_inst piano<sustain>		$instrumento piano com sustain
+
+ _bpm 60     			$velocidade da música (60 batidas por minuto)
+ _compass 4  			$Compasso da música (quarternário)
+ _ritm 3/4   			$ritmo da música (notas em semimínima)
+ 
+_repeat 2 :>            	$inicio do núcleo de repetição (2 vezes)
+	_sm 	C1       	$nota dó da 1ª oitava
+ 	_sm 	D1       	$nota ré da 1ª oitava
+	_sm 	E1 		$nota mi da 1ª oitava
+	_sm 	D1		$nota ré da 1ª oitava
+	_sm 	C1 		$nota dó da 1ª oitava
+	_sm 	C1		$nota dó da 1ª oitava
+	_sm 	F1		$nota fá da 1ª oitava
+	_sm 	F1		$nota fá da 1ª oitava
+<:				$fim do núcleo de repetição
+	play			$toque a música
+
+
+E É isso, este é um programa escrito em promula, dentre outros comandos,percebam
+que cada comando age por si só de forma imperativa e lógica. Os comandos principais
+são iniciados com "underline" _ para indicar que virá um comando. Em promule é progra-
+mado utilizando apenas 3 conceitos : ação,elemento e efeito. Tudo que for um comando é uma 
+Ação e tudo que vier depois de uma Ação é um Elemento, já o efeito é tudo que está entre
+maior e menor <> e depois do elemento, Ex.: _ação elemento<efeito>. Existem 2 tipos de efeitos:
+Efeito padrão e Efeito atual - O efeito padrão sempre vem depois da declaração do instrumento,
+Ex.: _inst instrumento<efeito-padrão>, e isto afetará todas as notas tocadas, portanto o efeito
+é opcional para todos os elementos e instrumentos.Quando o efeito padrão não é colocado, por padrão,
+as notas são tocadas de formas limpas e sem efeito. Ex.: Se o "efeito padrão" é "sustain", todas as
+notas serão tocadas com sustain, exceto as notas com o "Efeito atual" - O efeito atual atinge apenas
+a nota em questão não modificando as outras, Ex.: _sc d2 <staccato> , neste exemplo a nota Ré da 2ª 
+oitava é tocada na velocidade de semi-colcheia com efeito staccato. Um programa em promule é dividido
+em 3 partes : 1.declaração do instrumento, 2.configuração da música e 3.execução da música. A declaração 
+de instrumento são os instrumentos a serem utilizados como: piano, guitar, violon,etc... Na configuração 
+da música, é colocado a velocidade padrão em batidas por minuto ou por segundo, o compasso e o ritmo (que 
+é a mistura do símbolo padrão da nota com o compasso) e por último, na Execução da música - as notas, simbolos e
+loops entram, constituindo um algoritmo musical, cuja execução de todo ele está no final, através do "play". Na
+Execução poderá separar o algoritmo em "blocos de ações" onde cada bloco usará uma ação primordial no conjunto
+de notas dentro dentro dele. Essas ações primordiais podem ser descritas, tal como o _repeat para repetição, entre
+outros, como o: _accord, _multi, etc... tudo que estiver em _accord, será tocado simultaneamente, ou seja, formando
+um acorde, tudo que estiver em _multi, funcionará como uma "thread" em linguagens de programação, isso significa que
+_multi formará um bloco que tudo que estiver dentro dele executará ao mesmo tempo com outro bloco _multi, isto advém
+do conceito de "multi-tarefa" conhecidas em programação como thread. Um Exemplo de acordes com multi abaixo:
+
+
+_inst guitar<distortion>
+
+$Musica Smoke in the water
+
+_bpm 120
+_compass 4
+_ritm 3/4
+
+_multi base :>
+   _repeat 2 :>
+     _repeat 2 :>
+	  _accord G :>
+		_sm G1
+ 		_sm D2
+		_sm G2
+	  <:
+	  _accord A# :>
+		_sm AS1
+ 		_sm F2
+		_sm AS2
+	  <:
+          _into 1 :>
+	      _accord C :>
+		   _m. C1
+ 		   _m. G2
+		   _m. C2
+              <:
+	  <:
+        
+     <:
+     	_accord C :>
+	     _c C1
+	     _c G2
+	     _c C2
+        <:
+        _accord C# :>
+	     _c CS1
+	     _c GS2
+	     _c CS2
+        <:
+        _accord C :>
+	     _m C1
+	     _m G2
+	     _m C2
+        <:
+    <:
+<:
+
+_multi solo :>
+      _repeat 9 :>
+           _sc F5 <hammer-on>
+	   _sc G5 <hammer-off>
+      <:
+<:
+
+play base & solo
+
+
+Este é um exemplo de clássico do rock n´roll - o inicio da música smoke in the water, 
+veja que no inst utilizamos o instrumento guitarra com o efeito de distorção,velocidade
+da música em 120 bpm com o compasso quaternário, pois a contagem de segundos da música
+é o dobro da velocidade normal dos segundos, ritmo 3 por 4, pois a símbologia de velocidade
+padrão das notas é a semíminima dentro do compasso quarternário, porém algumas notas aumentam
+de velocidade no final do bloco _multi, utilizando a colcheia _c. Nesta músicas inserimos
+2 blocos de multi-tarefas - Base e solo, onde os dois serão executados ao mesmo tempo, a partir
+que a linha play base & solo ser executada. Os multis são nomeados para serem chamados pela ação
+play, quando há mais de um multi, poderá usar no play o símbolo & para acrescentar mais multis.
+Observa-se também que dentro da base temos uma repetição dentro de uma repetição, isso é possível
+Pois partes definidas da música podem se repetir no mesmo da partitura, e vemos os acordes _accord
+que define como elemento a nota principal a se definir o acorde,ex.: _accord C, _accord D,etc... assim
+todas as notas dentro de _accord serão tocadas "simultaneamente", diferentemente das que estão fora, que
+são tocadas "melodicamente". As ações repeat utilizam uma "certa" condição chamada _into, parecidas com o "if" das
+programações estruturadas, porém tem uma certa diferença, pois os intos só são chamados dentro de um loop
+e não utilizam sinais de comparação lógica ou relacional, tudo é implícito e pre-definido, já que sabemos
+o números de repetições da música, poderemos descartar certas execuções em determinados números, desta forma
+evita a dificuldade de se escrever um código imenso sem a devida necessidade. Já na multi-tarefa solo,temos
+9 repetições das notas fá da 5ª oitava e sol da 5ª oitava tocadas na velocidade de semi-colcheia com os efeitos
+hammer-on em fá e hammer-off em sol, apenas um "solinho" simples porém bem rápido. O número correspondente depois
+da nota é o número de oitavas em relação a altura da nota, toda nota que tiver a letra S, como: CS, DS, FS.. são
+notas sustenidas, pois para formarmos os acordes precisamos de 7 notas maiores, 5 notas sustenidas e pelo menos
+de 5 a 8 oitavas de uma nota, desta forma, construimos inúmeras tríades menores, com quarta, sustenidas,com sétima,
+com terça, e assim por diantes... quanto mais quantidade e diversidade de notas dentro de um único _accord, mais
+combinações de acordes teremos em nossos programas musicais. 
+
+Quando quisermos testar determinadas notas, sem ter que escrever um programa todo, abrimos o cmd e digitamos :
+
+C:/> PMLInterator 
+> play _sm C
+> play _sc D
+
+assim, tocamos notas específicas ao mesmo minuto que a executa;
+Agora se pretende executar um arquivo .pml, apenas digite:
+
+C:/> Promula MeuArquivo.pml
+
+Desta forma, ele compila o algoritmo promula e a executa, mas se apenas optar por criar seu algoritmo direto no cmd
+por questão de teste e não armazenamento, apenas digite PMLInterator, sem utilizar o play na interação, voçê escreve
+o algoritmo e só executa o play no final, pra executar todo o algoritmo. 
+ 

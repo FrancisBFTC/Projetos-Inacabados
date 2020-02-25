@@ -1,0 +1,48 @@
+#output : console.
+#background : black.
+#foreground : blue.
+#dynamic : 1 => 'C:\\Users\\Cida\\Desktop\\Plaxide\\Plax\\images\\'.
+*Var
+	@a1 : [0 + 0].
+$EndVar
+Start
+	dynamic[1 => effect : capture['scan', jpg]].
+		skip[0, 23].
+		skip[23, 0 => 50].
+		skip[0, 23 => 50].
+		skip[23, 0 => 50].
+		skip[0, 23 => 50].
+		skip[23, 0 => 50].
+	endDynamic
+	@a1 : [@a1 + 1].
+	sis[color:red{1 - Primeira dinamica executada}].bl
+	dynamic[1 => effect : capture['Line', jpg]].
+		loop[20].
+		skip[0, 2 => 50].
+	endDynamic
+	@a1 : [@a1 + 1].
+	sis[color:red{2 - Segunda dinamica executada}].bl
+	dynamic[1 => effect : capture['pic', jpg]].
+		skip[0, 9 => 50].
+		skip[9, 4 => 50].
+		skip[4, 6 => 50].
+		skip[6, 0 => 50].
+		skip[0, 9 => 50].
+		loop[2].
+		skip[9, 0 => 50].
+		skip[0, 6 => 50].
+	endDynamic
+	@a1 : [@a1 + 1].
+	sis[color:red{3 - Terceira dinamica executada}].bl
+	dynamic[1 => effect : capture['Quadrado', jpg]].
+		skip[0, 3 => 50].
+		loop[10].
+		skip[3, 0 => 10].
+		loop[10].
+		skip[0, 3 => 10].
+	endDynamic
+	@a1 : [@a1 + 1].
+	sis[color:red{4 - Quarta dinamica executada}].bl
+	sis[Contagem da dinamica = (@a1)].
+%
+Final

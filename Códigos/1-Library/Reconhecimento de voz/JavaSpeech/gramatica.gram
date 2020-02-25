@@ -1,0 +1,29 @@
+grammar gramatica;
+
+public <tarefa> = bloco de notas | gúgou | fêicibuk | eclipse | tór | utóurent | arduino | imvu | saite imvu | iú ueive | iú tube | word;
+public <acoes> = abrir <tarefa> | fechar <tarefa>;
+public <comprimento> = Olá | Alô | Oi | Eaê | Tchau | falow | Até mais | Até breve;
+public <saudar> = Bom dia | Boa tarde | Boa noite | Bom serviço | Boa madrugada | Bons sonhos | Durma bem;
+public <perguntar> = Como vai | Como está | Está bem | Se sente mal | Como está se sentindo | Vai bem | Como andas | Como vai as coisas
+		| Vou bem e voçê | Pode fazer uma coisa pra mim |;
+public <comprimentos1> = <comprimento> | <comprimento><saudar> | <saudar> | <comprimento><comprimento> | <saudar><saudar> | <comprimento><perguntar> 
+        | <comprimento><saudar><perguntar> | <saudar><perguntar>;
+public <respostas> = meu nome é wenderson | Eu tenho <numeros> anos; 
+public <perguntaPessoal> = Qual é o seu nome | Me diga seu nome | Fale o seu nome | Como se chama | <respostas> e o seu nome
+					| Qual é a sua idade | Quantos anos tem | Quantos anos voçê tem | Voçê tem quantos anos | <respostas> e voçê | <respostas> e a sua;
+public <estados> = Estou bem | Bérnard | Obrigado;
+public <unidades> = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;
+public <dezenas> = 10 | 20 | 30 | 40 | 50 | 60 | 70 | 80 | 90;
+public <centenas> = 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900;
+public <milhar> = 1000 | 2000 | 3000 | 4000 | 5000 | 6000 | 7000 | 8000 | 9000;
+public <operacao> = mais | menos | vezes | dividido por | é menor que | é maior que | é igual a | é diferente de
+		| resultado mais | resultado menos | resultado dividido por | resultado vezes | resultado é menor que | resultado é maior que
+		| resultado é diferente de | resultado é igual a;
+public <numeros> = <dezenas> e <unidades> | <centenas> e <unidades> | <centenas> e <dezenas> | <centenas> e <dezenas> e <unidades> 
+    | <milhar> e <unidades> | <milhar> e <dezenas> | <milhar> e <centenas> | <milhar> e <centenas> e <dezenas> e <unidades> | <unidades> | <dezenas> | <centenas> | <milhar>;
+public <calculos> = <numeros> <operacao> <numeros> | <operacao> <numeros>;
+public <perg> = Quanto que é <calculos> | calcule <calculos>;
+public <diaDaSemana> = segunda-feira | terça-feira | quarta-feira | quinta-feira | sexta-feira | sábado | domingo;
+public <cores> = verde | laranja | branco | azul | vermelho;
+public <controle> = assumir controle | ligar led <cores> | desligar led <cores>;
+public <sentence> = terminar;

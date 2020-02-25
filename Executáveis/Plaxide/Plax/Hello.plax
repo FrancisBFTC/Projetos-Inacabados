@@ -1,0 +1,10 @@
+#output : 'console'.
+#background : 'black'.
+#foreground : 'white'.
+*Var
+	@a1 : 'BFTC'.
+$EndVar
+Start
+	sis[Ola mundo (@a1)].
+%
+Final
